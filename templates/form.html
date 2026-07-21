@@ -1,23 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>MongoDB Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Submit Data to MongoDB Atlas</h1>
 
     {% if error %}
-        <p style="color:red;">{{ error }}</p>
+    <p style="color: red">{{ error }}</p>
     {% endif %}
 
     <form method="POST">
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+      <label>Name:</label><br />
+      <input type="text" name="name" /><br /><br />
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+      <label>Email:</label><br />
+      <input type="email" name="email" /><br /><br />
 
-        <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
+
+      <label>Item ID</label><br />
+      <input type="text" name="itemId" /><br /><br />
+
+      <label>Item UUID</label><br />
+      <input type="text" name="itemUUID" /><br /><br />
+
+      <label>Item Hash</label><br />
+      <input type="text" name="itemHash" /><br /><br />
     </form>
-</body>
+  </body>
 </html>
